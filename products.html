@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/fa0399c701.js" crossorigin="anonymous"></script>
+<body>
+
+    <!-- Nav bar -->
+    <header class="index" id="header_top">
+
+        <a href="#" class="logo"><img width="36px" height="36px" class="cart" src="/img/shopping-cart.png"><i>JustBuy</i></a>
+        <nav class="navbar">
+            
+            <a href="#home" onclick="open_home()">Home</a>
+            <a href="#products" class="scroll_button" data-target="ban1" >Products</a>
+            <a class="scroll_button" data-target="category_tile">Categories</a>
+        </nav>
+
+        <!-- Search Form Container -->
+        <div id="search-container" class="search-container">
+            <form class="search-bar" action="#">
+                <input class="input_search" type="text" id="search_box" placeholder="Search...">
+            </form>
+        </div>
+
+        <!-- Side Cart -->
+        <div class="side_cart" id="cart_side">
+            <div class="cart_cart">
+                <h2 class="p_cart">Shopping Cart</h2>
+                <ul id="cart-items"></ul>
+                <div class="cart_line"></div>
+                <p class="p_cart">Total: $<span id="cart-total">0.00</span></p>
+                <button class="to_cart" id="clear-cart-btn">Checkout</button>
+            </div>
+        </div>
+
+        <div class="icons">
+
+            <div class="fast scroll_button" id="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+            
+            <div class="fast toggle-btn" data-target="cart_side" id="cart-btn" data-target="side_cart">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </div>
+
+            <div class="fast" id="profile-btn">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+    
+
+
+    <!-- main columns -->
+
+
+    <div class="banner" id="ban1">
+
+        <img class="img" width="100%" height="30px" src="/img/banner555.webp">
+
+    </div>
+
+    
+
+    <!-- Categories -->
+
+    <br id="category_tile">
+    <div class="features">
+
+       <h1 class="heading"><span class="pro_feat">Categories</span></h1>
+   </div>
+
+   <div class="categories_box">
+
+       <div class="category_item" data-open="living.html">
+           <img src="/img/living.png" width="150px" height="150px">
+           <p class="category_name">Home & Living</p>
+       </div>
+
+       <div class="category_item" data-open="entertainment.html">
+           <img src="/img/entertainment.png" width="150px" height="150px">
+           <p class="category_name">Home Entertainment</p>
+       </div>
+
+       <div class="category_item" data-open="mobile.html">
+           <img src="/img/mobile.png" width="150px" height="150px">
+           <p class="category_name">Mobiles & Gadgets</p>
+       </div>
+
+       <div class="category_item" data-open="appliances.html">
+           <img src="/img/appliances.png" width="150px" height="150px">
+           <p class="category_name">Home Appliances</p>
+       </div>
+
+       <div class="category_item" data-open="laptop.html">
+           <img src="/img/laptop.png" width="150px" height="150px">
+           <p class="category_name">Computers & Laptops</p>
+       </div>
+
+   </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Different Products -->
+
+    <div class="product_category" id="living">
+
+        <h1 class="heading">Discover <span class="pro_feat">Products</span></h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="main_body2">
+        <div class="box-container">
+
+
+             <!-- product -->
+             <div class="box box3" data-name="aircon Portable Cooling">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/ecoflow_aircon.jpg">
+                    </div>
+
+                    <h1 class="pro_name">EcoFlow Wave 2 Cooling And Heating 5100 BTU Portable Air Conditioner</h1>
+                    <p class="fer">$ 730</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('EcoFlow Wave 2 Cooling And Heating 5100 BTU Portable Air Conditioner', 730, '/img/ecoflow_aircon.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="stool chair">
+                <div class="content">
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/foldable_stool.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Furniture source Amber 2-step foldable stool </h1>
+                    <p class="fer">$ 50</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Furniture source Amber 2-step foldable stool', 50, '/img/foldable_stool.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="epson projector">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/epson_projector.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Epson EpiqVision Mini EF-12 Wireless Laser Projector</h1>
+                    <p class="fer">$ 1030</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Epson EpiqVision Mini EF-12 Wireless Laser Projector', 1030, '/img/epson_projector.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="smartphone Xiaomi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/xiaomi.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Xiaomi Redmi A3 3+64GB/4+128GB Global Version</h1>
+                    <p class="fer">$ 120</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi Redmi A3 3+64GB/4+128GB Global Version', 120, '/img/xiaomi.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+             <!-- product -->
+             <div class="box box2" data-name="TCL TV">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/tcl_tv_nobg.webp">
+                    </div>
+
+                    <h1 class="pro_name ">TCL 55 4K Smart Android TV - 55P635 HDR, Netflix, YouTube, Google Assistant, Dolby Vision & Audio</h1>
+                    <p class="fer">$ 350</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('TCL 55 4K Smart Android TV - 55P635 HDR, Netflix, YouTube, Google Assistant, Dolby Vision & Audio', 350, '/img/tcl_tv_nobg.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="mop cleaner">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/mop_cleaner.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Mini Handheld Mop Portable Cleaning Mop Bathroom Car Window Glass Sponge Cleaning Tool</h1>
+                    <p class="fer">$ 5</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Mini Handheld Mop Portable Cleaning Mop Bathroom Car Window Glass Sponge Cleaning Tool', 5, '/img/mop_cleaner.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="aircon inverter">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/fuji_aircon.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Fujidenzo 0.75 HP Inverter Grade Window Type Aircon with Remote Control WAR-750IGT</h1>
+                    <p class="fer">$ 210</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Fujidenzo 0.75 HP Inverter Grade Window Type Aircon with Remote Control WAR-750IGT', 210, '/img/fuji_aircon.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="xiaomi Air Purifier">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/xiaomi_air_pure.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Xiaomi Smart Air Purifier 4 Compact Global Version</h1>
+                    <p class="fer">$ 70</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi Smart Air Purifier 4 Compact Global Version', 70, '/img/xiaomi_air_pure.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="wooden cabinet">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/wooden_cabinet.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">KARRY Wooden Wardrobe Small Home Cabinet With Drawer Storage Modern Closet</h1>
+                    <p class="fer">$ 30</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('KARRY Wooden Wardrobe Small Home Cabinet With Drawer Storage Modern Closet', 30, '/img/wooden_cabinet.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="smartphone iphone13">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/iphone13.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Apple iPhone 13 6.1-inches</h1>
+                    <p class="fer">$ 950</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Apple iPhone 13 6.1-inches', 950, '/img/iphone13.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="hanger wood">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/hanger.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">High Quality Wooden Hangers with Notches and Swivel Hooks</h1>
+                    <p class="fer">$ 2</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('High Quality Wooden Hangers with Notches and Swivel Hooks', 2, '/img/hanger.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="acer projector">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/acer_projector.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Acer X1228I XGA 1024 x 768 4,800 ANSI Lumens Brightness Wireless Projector MR.JTV11.007</h1>
+                    <p class="fer">$ 380</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Acer X1228I XGA 1024 x 768 4,800 ANSI Lumens Brightness Wireless Projector MR.JTV11.007', 380, '/img/acer_projector.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Microwave Maximus Oven">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/maximus_oven.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Maximus MAX-AO030S All In One Oven</h1>
+                    <p class="fer">$ 257</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Maximus MAX-AO030S All In One Oven', 257, '/img/maximus_oven.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- product -->
+            <div class="box box2" data-name="sofa">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/lazy_sofa.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Lazy sofa single bean bag tatami bedroom balcony lounge chair small sofa bed folding inflatable chai</h1>
+                    <p class="fer">$ 10</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Lazy sofa single bean bag tatami bedroom balcony lounge chair small sofa bed folding inflatable chai', 10, '/img/lazy_sofa.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="smartphone Samsung a55">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/a55.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Samsung Galaxy A55 5G 8/256GB</h1>
+                    <p class="fer">$ 200</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Samsung Galaxy A55 5G 8/256GB', 200, '/img/a55.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+             <!-- product -->
+             <div class="box box2" data-name="solar light">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/solar_light.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">20 LED LIGHT Solar powered Light Wall Light Waterproof 20led light</h1>
+                    <p class="fer">$ 3</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('20 LED LIGHT Solar powered Light Wall Light Waterproof 20led light', 3, '/img/solar_light.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="lamp shade">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/lamp_shade.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Desk Lamp Shade, Table Lamps, Bedside Lamp, Holder Switch On Eye-Protection Hose</h1>
+                    <p class="fer">$ 5</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Desk Lamp Shade, Table Lamps, Bedside Lamp, Holder Switch On Eye-Protection Hose', 5, '/img/lamp_shade.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Apple watch Series 9">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/apple_watch_9.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Apple Watch Series 9 GPS Aluminium Case with Sport Band</h1>
+                    <p class="fer">$ 390</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Apple Watch Series 9 GPS Aluminium Case with Sport Band', 390, '/img/apple_watch_9.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+             <!-- product -->
+             <div class="box box3" data-name="Freezer Fridge Maximus">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="img/maximus_fridge.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Maximus MAX-RF645MS 90cm Multi-Door Fridge and Freezer Silver</h1>
+                    <p class="fer">$ 1082</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Maximus MAX-RF645MS 90cm Multi-Door Fridge and Freezer Silver', 1082, 'img/maximus_fridge.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="tablet microsoft pro 4">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/microsoft_tablet.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Microsoft Surface Pro 4 Multi-Touch Tablet</h1>
+                    <p class="fer">$ 1200</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Microsoft Surface Pro 4 Multi-Touch Tablet', 1200, '/img/microsoft_tablet.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Apple ipad pro">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/apple_ipad_pro_6thgen.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Apple 12.9-inch iPad Pro WiFi 6th Generation</h1>
+                    <p class="fer">$ 1900</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Apple 12.9-inch iPad Pro WiFi 6th Generation', 1900, '/img/apple_ipad_pro_6thgen.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Generator">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/generator1.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Navigator Gasoline Generator NG2200</h1>
+                    <p class="fer">$ 250</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Navigator Gasoline Generator NG2200', 250, '/img/generator1.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- product -->
+            <div class="box box1" data-name="pc dell Desktop">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/dell_pc_set.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Dell Inspiron 3020 Desktop Intel UHD Graphics Free Monitor</h1>
+                    <p class="fer">$ 1185</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Dell Inspiron 3020 Desktop Intel UHD Graphics Free Monitor', 1185, '/img/dell_pc_set.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Laptop Strix">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/rog_strix_scar_17_low.png">
+                    </div>
+
+                    <h1 class="pro_name">ROG Strix Laptop</h1>
+                    <p class="fer">$ 1200</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('ROG Strix Laptop', 1200, '/img/rog_strix_scar_17_low.png')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Printer epson WiFi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/epson_printer.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Epson L1800 Printer A3 Printers With WIFI</h1>
+                    <p class="fer">$ 890</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Epson L1800 Printer A3 Printers With WIFI', 890, '/img/epson_printer.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Samsung TV">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/samsung_tv.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Samsung 55 inch Crystal UHD 4K AU7002 Smart TV</h1>
+                    <p class="fer">$ 300</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Samsung 55 inch Crystal UHD 4K AU7002 Smart TV', 300, '/img/samsung_tv.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="laptop HUAWEI">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/huawei_matebook.jpg">
+                    </div>
+
+                    <h1 class="pro_name">HUAWEI MateBook D 16 2024 Laptop | 12th/13th Gen Intel® Core™ i5/i9 Processor | 8GB/16GB + 512GB/1TB</h1>
+                    <p class="fer">$ 635</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('HUAWEI MateBook D 16 2024 Laptop | 12th/13th Gen Intel® Core™ i9 Processor | 16GB + 1TB', 635, '/img/huawei_matebook.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="earbuds xiaomi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/xiaomi_bud1.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Xiaomi Redmi Buds 4 Lite Global Version</h1>
+                    <p class="fer">$ 45</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi Redmi Buds 4 Lite Global Version', 45, '/img/xiaomi_bud1.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Keyboard Mechanical Gaming">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/razer_keyboard.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Razer BlackWidow V4 75% Hot-swappable Mechanical Gaming Keyboard</h1>
+                    <p class="fer">$ 190</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Razer BlackWidow V4 75% Hot-swappable Mechanical Gaming Keyboard', 190, '/img/razer_keyboard.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Microwave">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/microwave33.jpeg">
+                    </div>
+
+                    <h1 class="pro_name">Midea 20L Black Mechanical Microwave Oven</h1>
+                    <p class="fer">$ 55</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Midea 20L Black Mechanical Microwave Oven', 55, '/img/microwave33.jpeg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Samsung smartphone">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/cp_samsung.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Samsung Galaxy S24 Ultra</h1>
+                    <p class="fer">$ 1300</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Samsung Galaxy S24 Ultra', 1300, '/img/cp_samsung.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Headset CORSAIR Wireless">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/corsair_headset.webp">
+                    </div>
+
+                    <h1 class="pro_name">CORSAIR VIRTUOSO RGB WIRELESS High-Fidelity Gaming Headset</h1>
+                    <p class="fer">$ 195</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('CORSAIR VIRTUOSO RGB WIRELESS High-Fidelity Gaming Headset', 195, '/img/corsair_headset.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Platinum Karaoke">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/platinum_karaoke.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Platinum Karaoke Reyna 4 Player with Free Wired Microphone</h1>
+                    <p class="fer">$ 100</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Platinum Karaoke Reyna 4 Player with Free Wired Microphone', 100, '/img/platinum_karaoke.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Webcam Logitech">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/logitech_webcam.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Logitech MX BRIO Webcam</h1>
+                    <p class="fer">$ 199</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Logitech MX BRIO Webcam', 199, '/img/logitech_webcam.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="mouse Razer Gaming">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/razer_mouse.webp">
+                    </div>
+
+                    <h1 class="pro_name">Razer Cobra Pro Mouse</h1>
+                    <p class="fer">$ 269</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Razer Cobra Pro Mouse', 269, '/img/razer_mouse.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Microphone USB HyperX">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/hyperX_microphone.webp">
+                    </div>
+
+                    <h1 class="pro_name">HyperX QuadCast S - USB Microphone - RGB Lighting</h1>
+                    <p class="fer">$ 159</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('HyperX QuadCast S - USB Microphone - RGB Lighting', 159, '/img/hyperX_microphone.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Portable Drive Seagate">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/seagate_drive.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Seagate STHH1000300 Backup Plus Ultra Touch Portable Drive 1TB</h1>
+                    <p class="fer">$ 56</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Seagate STHH1000300 Backup Plus Ultra Touch Portable Drive 1TB', 56, '/img/seagate_drive.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Juicer Slow">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/slow_juicer.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Hurom H400 Easy Clean Slow Juicer</h1>
+                    <p class="fer">$ 515</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Hurom H400 Easy Clean Slow Juicer', 515, '/img/slow_juicer.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Blender Oster">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/osterizer_blender.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Oster 10-Speed Blender with Heat Resistant Glass Jar 1.25L</h1>
+                    <p class="fer">$ 61</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Oster 10-Speed Blender with Heat Resistant Glass Jar 1.25L', 61, '/img/osterizer_blender.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Electric Fan Panasonic">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/panasonic_electric_fan.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Panasonic F-459LP DC Inverter Power Living Electric Fan</h1>
+                    <p class="fer">$ 75</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Panasonic F-459LP DC Inverter Power Living Electric Fan', 75, '/img/panasonic_electric_fan.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Vacuum Robot xiaomi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/xiaomi_robot.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Xiaomi Robot Vacuum S10</h1>
+                    <p class="fer">$ 183</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi Robot Vacuum S10', 183, '/img/xiaomi_robot.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="pc dell Desktop">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/dell_pc.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Dell Vostro 3020 Tower Desktop Intel i7 13th Gen Intel UHD</h1>
+                    <p class="fer">$ 867</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Dell Vostro 3020 Tower Desktop i5 13th Gen Intel UHD Graphics 730 or Intel i7 13th Gen Intel UHD', 867, '/img/dell_pc.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="xiaomi Android TV">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/xiaomi_tv_box.webp">
+                    </div>
+
+                    <h1 class="pro_name ">Xiaomi Mi Box S 2nd Gen 4K HDR Android TV Box Google Assistant Media Player</h1>
+                    <p class="fer">$ 51</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi Mi Box S 2nd Gen 4K HDR Android TV Box Google Assistant Media Player', 51, '/img/xiaomi_tv_box.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="chair Furniture">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/royale_chair.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Furniture source Butter royale chair</h1>
+                    <p class="fer">$ 102</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Furniture source Butter royale chair', 102, '/img/royale_chair.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="iphone Apple smartphone">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/iphone_15.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Apple iPhone 15 Pro Max</h1>
+                    <p class="fer">$ 1800</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Apple iPhone 15 Pro Max', 1800, '/img/iphone_15.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="AirPods Apple">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/apple_airpods.jpg">
+                    </div>
+
+                    <h1 class="pro_name">AirPods Pro 2nd generation</h1>
+                    <p class="fer">$ 240</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('AirPods Pro 2nd generation', 240, '/img/apple_airpods.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="watch HUAWEI">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/huawei_watch_fit3.jpg">
+                    </div>
+
+                    <h1 class="pro_name">HUAWEI WATCH FIT 3</h1>
+                    <p class="fer">$ 111</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('HUAWEI WATCH FIT 3', 111, '/img/huawei_watch_fit3.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="earbuds xiaomi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/lenovo_smart_tab.webp">
+                    </div>
+
+                    <h1 class="pro_name">Lenovo Smart Tab M10 FHD Plus ZA5Y0119PH 10.3 FHD, RAM: 4GB ROM: 64GB, Battery: 5000mAh</h1>
+                    <p class="fer">$ 231</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Lenovo Smart Tab M10 FHD Plus ZA5Y0119PH 10.3 FHD, RAM: 4GB ROM: 64GB, Battery: 5000mAh', 231, '/img/lenovo_smart_tab.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="tv flat xiaomi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/xiaomi_flat_tv.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Xiaomi TV A Pro 32 inch Full HD Dolby Audio Premium Metallic Frame Android Smart TV</h1>
+                    <p class="fer">$ 154</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi TV A Pro 32 inch Full HD Dolby Audio Premium Metallic Frame Android Smart TV', 154, '/img/xiaomi_flat_tv.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="speakers audio Sony">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/sony_speakers.png">
+                    </div>
+
+                    <h1 class="pro_name ">Sony MHC-M40D High Power Audio System with DVD</h1>
+                    <p class="fer">$ 259</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Sony MHC-M40D High Power Audio System with DVD', 259, '/img/sony_speakers.png')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="media player Streaming">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/firestick.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Amazon Fire TV Stick 4K Max Streaming Media Player with Alexa Voice Remote HD Streaming</h1>
+                    <p class="fer">$ 44</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Amazon Fire TV Stick 4K Max Streaming Media Player with Alexa Voice Remote HD Streaming', 44, '/img/firestick.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="speakers Soundbar xiaomi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/speaker_soundbar.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Xiaomi Redmi TV Speaker Soundbar Bluetooth Version 5.0 Wireless Connection with Playback Support</h1>
+                    <p class="fer">$ 29</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi Redmi TV Speaker Soundbar Bluetooth Version 5.0 Wireless Connection with Playback Support', 29, '/img/speaker_soundbar.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="bed king Queen">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/tatami_bes.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">King/Queen Size Multifunctional Bed Tech Smart Beds Ultimate Camas TATAMI Massage Lit Genuine</h1>
+                    <p class="fer">$ 1540</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('King/Queen Size Multifunctional Bed Tech Smart Beds Ultimate Camas TATAMI Massage Lit Genuine', 1540, '/img/tatami_bes.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Table foldable Rectangular">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/ace_table.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Rectangular Folding Table - Black</h1>
+                    <p class="fer">$ 64</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Rectangular Folding Table - Black', 64, '/img/ace_table.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Wrench Impact Mitsushi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/impact_wrench.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Mitsushi MIT-2001 18-36V Cordless Impact Wrench with 2 Li-ion Batteries</h1>
+                    <p class="fer">$ 123</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Mitsushi MIT-2001 18-36V Cordless Impact Wrench with 2 Li-ion Batteries', 123, '/img/impact_wrench.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Speakers JBL">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/jbl_speakers.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">JBL Quantum Duo PC Gaming Speakers with RGB</h1>
+                    <p class="fer">$ 161</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('JBL Quantum Duo PC Gaming Speakers with RGB', 161, '/img/jbl_speakers.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Monitor Samsung Gaming">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/samsung_monitor.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Samsung LS49CG954SEXXP 49 Curved Odyssey G9 OLED DP HDMI USB Gaming Monitor with free Samsung HW-B5</h1>
+                    <p class="fer">$ 1570</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Samsung LS49CG954SEXXP 49 Curved Odyssey G9 OLED DP HDMI USB Gaming Monitor with free Samsung HW-B5', 1570, '/img/samsung_monitor.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Google Chromecast TV">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/google_tv.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Google Chromecast with Google TV Snow 4K UHD 60 Hz Output Dolby Atmos Support Android</h1>
+                    <p class="fer">$ 95</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Google Chromecast with Google TV Snow 4K UHD 60 Hz Output Dolby Atmos Support Android', 95, '/img/google_tv.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Washing Machine Dryer">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/maximus_washing.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Maximus MAX-WD106W Inverter Washing Machine/Dryer Combo</h1>
+                    <p class="fer">$ 532</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Maximus MAX-WD106W Inverter Washing Machine/Dryer Combo', 532, '/img/maximus_washing.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="water dispenser Iwata ">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/iwata_dispenser.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Iwata CM22WDT-ICE Hot and cold water dispenser with Ice maker</h1>
+                    <p class="fer">$ 279</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Iwata CM22WDT-ICE Hot and cold water dispenser with Ice maker', 279, '/img/iwata_dispenser.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- footer -->
+
+    <div class="line">
+    </div>
+
+    <footer class="foot">
+        <div class="footer-content">
+            <p class="foot_p follow">Follow US</p>
+            <div class="foot_icons">
+                <button class="fa-brands fa-square-facebook"></button>
+                <button class="fa-brands fa-square-twitter"></button>
+                <button class="fa-brands fa-instagram"></button>
+            </div>
+            <p class="foot_p all">@ 2024 JustBuy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { padding: 20px; }
+        #cart-items { list-style-type: none; padding: 0; }
+        #cart-items li { margin-bottom: 10px; }
+        #logout-btn { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, <span id="user-name"></span></h2>
+        <button id="logout-btn">Logout</button>
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+        <button id="clear-cart-btn">Clear Cart</button>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const username = localStorage.getItem('username');
+            if (!username || localStorage.getItem('isLoggedIn') !== 'true') {
+                window.location.href = 'auth.html';
+            } else {
+                document.getElementById('user-name').textContent = username;
+                loadCartData();
+            }
+        });
+
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            localStorage.removeItem('isLoggedIn');
+            window.location.href = 'auth.html';
+        });
+
+        // Functions for cart operations (addToCart, loadCartData, etc.) from your provided JS code can be used here directly
+        // Assuming you have these functions in a separate JS file or inline below
+
+        // Example of including your existing JS code:
+        // Add your existing JS code here or include it via a <script src="path/to/your.js"></script>
+    </script>
+</body>
+</html>

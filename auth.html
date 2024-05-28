@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Sign In</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 400px; margin: 0 auto; padding: 20px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; }
+        button { width: 100%; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="auth-title">Sign In</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="auth-btn">Sign In</button>
+        <p id="toggle-auth">Don't have an account? <a href="#" id="toggle-auth-link">Sign Up</a></p>
+    </div>
+    <script>
+        document.getElementById('toggle-auth-link').addEventListener('click', function() {
+            const authTitle = document.getElementById('auth-title');
+            const authBtn = document.getElementById('auth-btn');
+            if (authTitle.textContent === 'Sign In') {
+                authTitle.textContent = 'Sign Up';
+                authBtn.textContent = 'Sign Up';
+                document.getElementById('toggle-auth').innerHTML = 'Already have an account? <a href="#" id="toggle-auth-link">Sign In</a>';
+            } else {
+                authTitle.textContent = 'Sign In';
+                authBtn.textContent = 'Sign In';
+                document.getElementById('toggle-auth').innerHTML = 'Don\'t have an account? <a href="#" id="toggle-auth-link">Sign Up</a>';
+            }
+        });
+
+        document.getElementById('auth-btn').addEventListener('click', function() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username && password) {
+                localStorage.setItem('username', username);
+                localStorage.setItem('password', password);
+                localStorage.setItem('isLoggedIn', 'true');
+                window.location.href = 'index.html';
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>

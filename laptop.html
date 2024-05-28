@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/fa0399c701.js" crossorigin="anonymous"></script>
+<body>
+
+    <!-- Nav bar -->
+    <header class="index" id="header_top">
+
+        <a href="#" class="logo"><img width="36px" height="36px" class="cart" src="/img/shopping-cart.png"><i>JustBuy</i></a>
+        <nav class="navbar">
+            
+            <a href="#home" onclick="open_home()">Home</a>
+            <a data-open="products.html">Products</a>
+            <a class="scroll_button" data-target="category_tile">Categories</a>
+        </nav>
+
+        <!-- Search Form Container -->
+        <div id="search-container" class="search-container">
+            <form class="search-bar" action="#">
+                <input class="input_search" type="text" id="search_box" placeholder="Search...">
+            </form>
+        </div>
+
+        <!-- Side Cart -->
+        <div class="side_cart" id="cart_side">
+            <div class="cart_cart">
+                <h2 class="p_cart">Shopping Cart</h2>
+                <ul id="cart-items"></ul>
+                <div class="cart_line"></div>
+                <p class="p_cart">Total: $<span id="cart-total">0.00</span></p>
+                <button class="to_cart" id="clear-cart-btn">Checkout</button>
+            </div>
+        </div>
+
+        <div class="icons">
+
+            <div class="fast scroll_button" id="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+            
+            <div class="fast toggle-btn" data-target="cart_side" id="cart-btn" data-target="side_cart">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </div>
+
+            <div class="fast" id="profile-btn">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+    
+
+
+    <!-- main columns -->
+
+
+    <div class="banner" id="ban1">
+
+        <img class="img" width="100%" height="30px" src="/img/banner555.webp">
+
+    </div>
+
+    <!-- Categories -->
+
+    <br id="category_tile">
+    <div class="features">
+
+       <h1 class="heading"><span class="pro_feat">Categories</span></h1>
+    </div>
+
+    <div class="categories_box">
+
+       <div class="category_item" data-open="living.html">
+           <img src="/img/living.png" width="150px" height="150px">
+           <p class="category_name">Home & Living</p>
+       </div>
+
+       <div class="category_item" data-open="entertainment.html">
+           <img src="/img/entertainment.png" width="150px" height="150px">
+           <p class="category_name">Home Entertainment</p>
+       </div>
+
+       <div class="category_item" data-open="mobile.html">
+           <img src="/img/mobile.png" width="150px" height="150px">
+           <p class="category_name">Mobiles & Gadgets</p>
+       </div>
+
+       <div class="category_item" data-open="appliances.html">
+           <img src="/img/appliances.png" width="150px" height="150px">
+           <p class="category_name">Home Appliances</p>
+       </div>
+
+       <div class="category_item" data-open="laptop.html">
+           <img src="/img/laptop.png" width="150px" height="150px">
+           <p class="category_name">Computers & Laptops</p>
+       </div>
+
+   </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Different Categories -->
+
+    <div class="product_category" id="living">
+
+        <h1 class="heading">Computers & <span class="pro_feat">Laptops</span></h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="main_body2">
+        <div class="box-container">
+
+
+            <!-- product -->
+            <div class="box box1" data-name="Laptop Strix">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/rog_strix_scar_17_low.png">
+                    </div>
+
+                    <h1 class="pro_name">ROG Strix Laptop</h1>
+                    <p class="fer">$ 1200</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('ROG Strix Laptop', 1200, '/img/rog_strix_scar_17_low.png')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Monitor Samsung Gaming">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/samsung_monitor.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Samsung LS49CG954SEXXP 49 Curved Odyssey G9 OLED DP HDMI USB Gaming Monitor with free Samsung HW-B5</h1>
+                    <p class="fer">$ 1570</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Samsung LS49CG954SEXXP 49 Curved Odyssey G9 OLED DP HDMI USB Gaming Monitor with free Samsung HW-B5', 1570, '/img/samsung_monitor.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="pc dell Desktop">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/dell_pc.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Dell Vostro 3020 Tower Desktop Intel i7 13th Gen Intel UHD</h1>
+                    <p class="fer">$ 867</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Dell Vostro 3020 Tower Desktop i5 13th Gen Intel UHD Graphics 730 or Intel i7 13th Gen Intel UHD', 867, '/img/dell_pc.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="pc dell Desktop">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/dell_pc_set.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Dell Inspiron 3020 Desktop Intel UHD Graphics Free Monitor</h1>
+                    <p class="fer">$ 1185</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Dell Inspiron 3020 Desktop Intel UHD Graphics Free Monitor', 1185, '/img/dell_pc_set.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Headset CORSAIR Wireless">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/corsair_headset.webp">
+                    </div>
+
+                    <h1 class="pro_name">CORSAIR VIRTUOSO RGB WIRELESS High-Fidelity Gaming Headset</h1>
+                    <p class="fer">$ 195</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('CORSAIR VIRTUOSO RGB WIRELESS High-Fidelity Gaming Headset', 195, '/img/corsair_headset.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Keyboard Mechanical Gaming">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/razer_keyboard.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Razer BlackWidow V4 75% Hot-swappable Mechanical Gaming Keyboard</h1>
+                    <p class="fer">$ 190</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Razer BlackWidow V4 75% Hot-swappable Mechanical Gaming Keyboard', 190, '/img/razer_keyboard.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="laptop HUAWEI">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/huawei_matebook.jpg">
+                    </div>
+
+                    <h1 class="pro_name">HUAWEI MateBook D 16 2024 Laptop | 12th/13th Gen Intel® Core™ i5/i9 Processor | 8GB/16GB + 512GB/1TB</h1>
+                    <p class="fer">$ 635</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('HUAWEI MateBook D 16 2024 Laptop | 12th/13th Gen Intel® Core™ i9 Processor | 16GB + 1TB', 635, '/img/huawei_matebook.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Printer epson WiFi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/epson_printer.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Epson L1800 Printer A3 Printers With WIFI</h1>
+                    <p class="fer">$ 890</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Epson L1800 Printer A3 Printers With WIFI', 890, '/img/epson_printer.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Webcam Logitech">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/logitech_webcam.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Logitech MX BRIO Webcam</h1>
+                    <p class="fer">$ 199</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Logitech MX BRIO Webcam', 199, '/img/logitech_webcam.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="mouse Razer Gaming">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/razer_mouse.webp">
+                    </div>
+
+                    <h1 class="pro_name">Razer Cobra Pro Mouse</h1>
+                    <p class="fer">$ 269</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Razer Cobra Pro Mouse', 269, '/img/razer_mouse.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Microphone USB HyperX">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/hyperX_microphone.webp">
+                    </div>
+
+                    <h1 class="pro_name">HyperX QuadCast S - USB Microphone - RGB Lighting</h1>
+                    <p class="fer">$ 159</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('HyperX QuadCast S - USB Microphone - RGB Lighting', 159, '/img/hyperX_microphone.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box1" data-name="Portable Drive Seagate">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/seagate_drive.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Seagate STHH1000300 Backup Plus Ultra Touch Portable Drive 1TB</h1>
+                    <p class="fer">$ 56</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Seagate STHH1000300 Backup Plus Ultra Touch Portable Drive 1TB', 56, '/img/seagate_drive.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- footer -->
+
+    <div class="line">
+    </div>
+
+    <footer class="foot">
+        <div class="footer-content">
+            <p class="foot_p follow">Follow US</p>
+            <div class="foot_icons">
+                <button class="fa-brands fa-square-facebook"></button>
+                <button class="fa-brands fa-square-twitter"></button>
+                <button class="fa-brands fa-instagram"></button>
+            </div>
+            <p class="foot_p all">@ 2024 JustBuy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

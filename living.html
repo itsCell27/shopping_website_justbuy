@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/fa0399c701.js" crossorigin="anonymous"></script>
+<body>
+
+    <!-- Nav bar -->
+    <header class="index" id="header_top">
+
+        <a href="#" class="logo"><img width="36px" height="36px" class="cart" src="/img/shopping-cart.png"><i>JustBuy</i></a>
+        <nav class="navbar">
+            
+            <a href="#home" onclick="open_home()">Home</a>
+            <a data-open="products.html">Products</a>
+            <a class="scroll_button" data-target="category_tile">Categories</a>
+        </nav>
+
+        <!-- Search Form Container -->
+        <div id="search-container" class="search-container">
+            <form class="search-bar" action="#">
+                <input class="input_search" type="text" id="search_box" placeholder="Search...">
+            </form>
+        </div>
+
+        <!-- Side Cart -->
+        <div class="side_cart" id="cart_side">
+            <div class="cart_cart">
+                <h2 class="p_cart">Shopping Cart</h2>
+                <ul id="cart-items"></ul>
+                <div class="cart_line"></div>
+                <p class="p_cart">Total: $<span id="cart-total">0.00</span></p>
+                <button class="to_cart" id="clear-cart-btn">Checkout</button>
+            </div>
+        </div>
+
+        <div class="icons">
+
+            <div class="fast scroll_button" id="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+            
+            <div class="fast toggle-btn" data-target="cart_side" id="cart-btn" data-target="side_cart">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </div>
+
+            <div class="fast" id="profile-btn">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+    
+
+
+    <!-- main columns -->
+
+
+    <div class="banner" id="ban1">
+
+        <img class="img" width="100%" height="30px" src="/img/banner555.webp">
+
+    </div>
+
+    <!-- Categories -->
+
+    <br id="category_tile">
+    <div class="features">
+
+       <h1 class="heading"><span class="pro_feat">Categories</span></h1>
+    </div>
+
+    <div class="categories_box">
+
+       <div class="category_item" data-open="living.html">
+           <img src="/img/living.png" width="150px" height="150px">
+           <p class="category_name">Home & Living</p>
+       </div>
+
+       <div class="category_item" data-open="entertainment.html">
+           <img src="/img/entertainment.png" width="150px" height="150px">
+           <p class="category_name">Home Entertainment</p>
+       </div>
+
+       <div class="category_item" data-open="mobile.html">
+           <img src="/img/mobile.png" width="150px" height="150px">
+           <p class="category_name">Mobiles & Gadgets</p>
+       </div>
+
+       <div class="category_item" data-open="appliances.html">
+           <img src="/img/appliances.png" width="150px" height="150px">
+           <p class="category_name">Home Appliances</p>
+       </div>
+
+       <div class="category_item" data-open="laptop.html">
+           <img src="/img/laptop.png" width="150px" height="150px">
+           <p class="category_name">Computers & Laptops</p>
+       </div>
+
+   </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Different Categories -->
+
+    <div class="product_category" id="living">
+
+        <h1 class="heading">Home & <span class="pro_feat">Living</span></h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="main_body2">
+        <div class="box-container">
+
+
+            <!-- product -->
+            <div class="box box3" data-name="stool chair">
+                <div class="content">
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/foldable_stool.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Furniture source Amber 2-step foldable stool </h1>
+                    <p class="fer">$ 50</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Navigator Gasoline Generator NG2200', 250, '/img/generator1.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box3" data-name="Generator">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/generator1.jpg">
+                    </div>
+
+                    <h1 class="pro_name">Navigator Gasoline Generator NG2200</h1>
+                    <p class="fer">$ 250</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Navigator Gasoline Generator NG2200', 250, '/img/generator1.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <!-- product -->
+            <div class="box box2" data-name="mop cleaner">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/mop_cleaner.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Mini Handheld Mop Portable Cleaning Mop Bathroom Car Window Glass Sponge Cleaning Tool</h1>
+                    <p class="fer">$ 5</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Mini Handheld Mop Portable Cleaning Mop Bathroom Car Window Glass Sponge Cleaning Tool', 5, '/img/mop_cleaner.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="hanger wood">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/hanger.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">High Quality Wooden Hangers with Notches and Swivel Hooks</h1>
+                    <p class="fer">$ 2</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('High Quality Wooden Hangers with Notches and Swivel Hooks', 2, '/img/hanger.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="sofa">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/lazy_sofa.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Lazy sofa single bean bag tatami bedroom balcony lounge chair small sofa bed folding inflatable chai</h1>
+                    <p class="fer">$ 10</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Lazy sofa single bean bag tatami bedroom balcony lounge chair small sofa bed folding inflatable chai', 10, '/img/lazy_sofa.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="solar light">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/solar_light.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">20 LED LIGHT Solar powered Light Wall Light Waterproof 20led light</h1>
+                    <p class="fer">$ 3</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('20 LED LIGHT Solar powered Light Wall Light Waterproof 20led light', 3, '/img/solar_light.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="lamp shade">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/lamp_shade.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Desk Lamp Shade, Table Lamps, Bedside Lamp, Holder Switch On Eye-Protection Hose</h1>
+                    <p class="fer">$ 5</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Desk Lamp Shade, Table Lamps, Bedside Lamp, Holder Switch On Eye-Protection Hose', 5, '/img/lamp_shade.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="wooden cabinet">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/wooden_cabinet.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">KARRY Wooden Wardrobe Small Home Cabinet With Drawer Storage Modern Closet</h1>
+                    <p class="fer">$ 30</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('KARRY Wooden Wardrobe Small Home Cabinet With Drawer Storage Modern Closet', 30, '/img/wooden_cabinet.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="chair Furniture">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/royale_chair.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Furniture source Butter royale chair</h1>
+                    <p class="fer">$ 102</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Furniture source Butter royale chair', 102, '/img/royale_chair.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="bed king Queen">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/tatami_bes.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">King/Queen Size Multifunctional Bed Tech Smart Beds Ultimate Camas TATAMI Massage Lit Genuine</h1>
+                    <p class="fer">$ 1540</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('King/Queen Size Multifunctional Bed Tech Smart Beds Ultimate Camas TATAMI Massage Lit Genuine', 1540, '/img/tatami_bes.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Table foldable Rectangular">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/ace_table.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Rectangular Folding Table - Black</h1>
+                    <p class="fer">$ 64</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Rectangular Folding Table - Black', 64, '/img/ace_table.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Wrench Impact Mitsushi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/impact_wrench.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Mitsushi MIT-2001 18-36V Cordless Impact Wrench with 2 Li-ion Batteries</h1>
+                    <p class="fer">$ 123</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Mitsushi MIT-2001 18-36V Cordless Impact Wrench with 2 Li-ion Batteries', 123, '/img/impact_wrench.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- footer -->
+
+    <div class="line">
+    </div>
+
+    <footer class="foot">
+        <div class="footer-content">
+            <p class="foot_p follow">Follow US</p>
+            <div class="foot_icons">
+                <button class="fa-brands fa-square-facebook"></button>
+                <button class="fa-brands fa-square-twitter"></button>
+                <button class="fa-brands fa-instagram"></button>
+            </div>
+            <p class="foot_p all">@ 2024 JustBuy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

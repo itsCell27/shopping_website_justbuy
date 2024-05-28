@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 400px; margin: 0 auto; padding: 20px; text-align: center; }
+        input { width: 100%; padding: 10px; margin: 10px 0; }
+        button { width: 100%; padding: 10px; margin: 10px 0; }
+        img { max-width: 100px; max-height: 100px; display: block; margin: 10px auto; border-radius: 50%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+        <img id="profile-picture" src="" alt="Profile Picture">
+        <input type="file" id="profile-picture-input" accept="image/*">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <button id="save-profile-btn">Save Profile</button>
+        <button id="logout-btn">Logout</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const username = localStorage.getItem('username');
+            const profilePicture = localStorage.getItem('profilePicture');
+
+            if (!username) {
+                window.location.href = 'auth.html';
+            } else {
+                document.getElementById('username').value = username;
+                document.getElementById('name').value = localStorage.getItem('name') || '';
+                document.getElementById('email').value = localStorage.getItem('email') || '';
+                if (profilePicture) {
+                    document.getElementById('profile-picture').src = profilePicture;
+                }
+            }
+        });
+
+        document.getElementById('profile-picture-input').addEventListener('change', function(event) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                const profilePicture = reader.result;
+                document.getElementById('profile-picture').src = profilePicture;
+                localStorage.setItem('profilePicture', profilePicture);
+            };
+            if (event.target.files[0]) {
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        });
+
+        document.getElementById('save-profile-btn').addEventListener('click', function() {
+            const username = document.getElementById('username').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            localStorage.setItem('username', username);
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+            alert('Profile saved successfully!');
+        });
+
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            localStorage.removeItem('isLoggedIn');
+            window.location.href = 'auth.html';
+        });
+    </script>
+</body>
+</html>

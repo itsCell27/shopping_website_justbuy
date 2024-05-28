@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/fa0399c701.js" crossorigin="anonymous"></script>
+<body>
+
+    <!-- Nav bar -->
+    <header class="index" id="header_top">
+
+        <a href="#" class="logo"><img width="36px" height="36px" class="cart" src="/img/shopping-cart.png"><i>JustBuy</i></a>
+        <nav class="navbar">
+            
+            <a href="#home" onclick="open_home()">Home</a>
+            <a data-open="products.html">Products</a>
+            <a class="scroll_button" data-target="category_tile">Categories</a>
+        </nav>
+
+        <!-- Search Form Container -->
+        <div id="search-container" class="search-container">
+            <form class="search-bar" action="#">
+                <input class="input_search" type="text" id="search_box" placeholder="Search...">
+            </form>
+        </div>
+
+        <!-- Side Cart -->
+        <div class="side_cart" id="cart_side">
+            <div class="cart_cart">
+                <h2 class="p_cart">Shopping Cart</h2>
+                <ul id="cart-items"></ul>
+                <div class="cart_line"></div>
+                <p class="p_cart">Total: $<span id="cart-total">0.00</span></p>
+                <button class="to_cart" id="clear-cart-btn">Checkout</button>
+            </div>
+        </div>
+
+        <div class="icons">
+
+            <div class="fast scroll_button" id="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+            
+            <div class="fast toggle-btn" data-target="cart_side" id="cart-btn" data-target="side_cart">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </div>
+
+            <div class="fast" id="profile-btn">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+    
+
+
+    <!-- main columns -->
+
+
+    <div class="banner" id="ban1">
+
+        <img class="img" width="100%" height="30px" src="/img/banner555.webp">
+
+    </div>
+
+    <!-- Categories -->
+
+    <br id="category_tile">
+    <div class="features">
+
+       <h1 class="heading"><span class="pro_feat">Categories</span></h1>
+    </div>
+
+    <div class="categories_box">
+
+       <div class="category_item" data-open="living.html">
+           <img src="/img/living.png" width="150px" height="150px">
+           <p class="category_name">Home & Living</p>
+       </div>
+
+       <div class="category_item" data-open="entertainment.html">
+           <img src="/img/entertainment.png" width="150px" height="150px">
+           <p class="category_name">Home Entertainment</p>
+       </div>
+
+       <div class="category_item" data-open="mobile.html">
+           <img src="/img/mobile.png" width="150px" height="150px">
+           <p class="category_name">Mobiles & Gadgets</p>
+       </div>
+
+       <div class="category_item" data-open="appliances.html">
+           <img src="/img/appliances.png" width="150px" height="150px">
+           <p class="category_name">Home Appliances</p>
+       </div>
+
+       <div class="category_item" data-open="laptop.html">
+           <img src="/img/laptop.png" width="150px" height="150px">
+           <p class="category_name">Computers & Laptops</p>
+       </div>
+
+   </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Different Categories -->
+
+    <div class="product_category" id="living">
+
+        <h1 class="heading">Home <span class="pro_feat">Entertainment</span></h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="main_body2">
+        <div class="box-container">
+
+
+            
+            <!-- product -->
+            <div class="box box2" data-name="Samsung TV">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/samsung_tv.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Samsung 55 inch Crystal UHD 4K AU7002 Smart TV</h1>
+                    <p class="fer">$ 300</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Samsung 55 inch Crystal UHD 4K AU7002 Smart TV', 300, '/img/samsung_tv.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="TCL TV">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/tcl_tv_nobg.webp">
+                    </div>
+
+                    <h1 class="pro_name ">TCL 55 4K Smart Android TV - 55P635 HDR, Netflix, YouTube, Google Assistant, Dolby Vision & Audio</h1>
+                    <p class="fer">$ 350</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('TCL 55 4K Smart Android TV - 55P635 HDR, Netflix, YouTube, Google Assistant, Dolby Vision & Audio', 350, '/img/tcl_tv_nobg.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="epson projector">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/epson_projector.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Epson EpiqVision Mini EF-12 Wireless Laser Projector</h1>
+                    <p class="fer">$ 1030</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Epson EpiqVision Mini EF-12 Wireless Laser Projector', 1030, '/img/epson_projector.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="acer projector">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/acer_projector.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Acer X1228I XGA 1024 x 768 4,800 ANSI Lumens Brightness Wireless Projector MR.JTV11.007</h1>
+                    <p class="fer">$ 380</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Acer X1228I XGA 1024 x 768 4,800 ANSI Lumens Brightness Wireless Projector MR.JTV11.007', 380, '/img/acer_projector.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Platinum Karaoke">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/platinum_karaoke.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Platinum Karaoke Reyna 4 Player with Free Wired Microphone</h1>
+                    <p class="fer">$ 100</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Platinum Karaoke Reyna 4 Player with Free Wired Microphone', 100, '/img/platinum_karaoke.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="xiaomi Android TV">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/xiaomi_tv_box.webp">
+                    </div>
+
+                    <h1 class="pro_name ">Xiaomi Mi Box S 2nd Gen 4K HDR Android TV Box Google Assistant Media Player</h1>
+                    <p class="fer">$ 51</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi Mi Box S 2nd Gen 4K HDR Android TV Box Google Assistant Media Player', 51, '/img/xiaomi_tv_box.webp')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Speakers JBL">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/jbl_speakers.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">JBL Quantum Duo PC Gaming Speakers with RGB</h1>
+                    <p class="fer">$ 161</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('JBL Quantum Duo PC Gaming Speakers with RGB', 161, '/img/jbl_speakers.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="Google Chromecast TV">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/google_tv.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Google Chromecast with Google TV Snow 4K UHD 60 Hz Output Dolby Atmos Support Android</h1>
+                    <p class="fer">$ 95</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Google Chromecast with Google TV Snow 4K UHD 60 Hz Output Dolby Atmos Support Android', 95, '/img/google_tv.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="tv flat xiaomi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/xiaomi_flat_tv.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Xiaomi TV A Pro 32 inch Full HD Dolby Audio Premium Metallic Frame Android Smart TV</h1>
+                    <p class="fer">$ 154</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi TV A Pro 32 inch Full HD Dolby Audio Premium Metallic Frame Android Smart TV', 154, '/img/xiaomi_flat_tv.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="speakers audio Sony">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/sony_speakers.png">
+                    </div>
+
+                    <h1 class="pro_name ">Sony MHC-M40D High Power Audio System with DVD</h1>
+                    <p class="fer">$ 259</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Sony MHC-M40D High Power Audio System with DVD', 259, '/img/sony_speakers.png')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="media player Streaming">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/firestick.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Amazon Fire TV Stick 4K Max Streaming Media Player with Alexa Voice Remote HD Streaming</h1>
+                    <p class="fer">$ 44</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Amazon Fire TV Stick 4K Max Streaming Media Player with Alexa Voice Remote HD Streaming', 44, '/img/firestick.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- product -->
+            <div class="box box2" data-name="speakers Soundbar xiaomi">
+                <div class="content" >
+
+                    <div class="product_img">
+                        <img width="200px" height="200px" src="/img/speaker_soundbar.jpg">
+                    </div>
+
+                    <h1 class="pro_name ">Xiaomi Redmi TV Speaker Soundbar Bluetooth Version 5.0 Wireless Connection with Playback Support</h1>
+                    <p class="fer">$ 29</p>
+
+                    <div class="addCart">
+                        <button class="add_btn" onclick="addToCart('Xiaomi Redmi TV Speaker Soundbar Bluetooth Version 5.0 Wireless Connection with Playback Support', 29, '/img/speaker_soundbar.jpg')">
+                            <span class="fa-solid fa-cart-plus"></span>Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- footer -->
+
+    <div class="line">
+    </div>
+
+    <footer class="foot">
+        <div class="footer-content">
+            <p class="foot_p follow">Follow US</p>
+            <div class="foot_icons">
+                <button class="fa-brands fa-square-facebook"></button>
+                <button class="fa-brands fa-square-twitter"></button>
+                <button class="fa-brands fa-instagram"></button>
+            </div>
+            <p class="foot_p all">@ 2024 JustBuy. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+</html>
